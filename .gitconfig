@@ -59,5 +59,3 @@
 	process = git-lfs filter-process
 [ghq]
   root = ~/.ghq
-[init]
-	defaultBranch = main
