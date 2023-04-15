@@ -3,6 +3,7 @@
 	name = nack098
 [core]
 	editor = nvim
+  excludesfile = ~/.dotfiles/.gitignore
 	ignorecase = false
 [push]
   default = simple
