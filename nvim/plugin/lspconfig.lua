@@ -99,7 +99,12 @@ nvim_lsp.jsonls.setup {
   capabilities = capabilities,
 }
 
-nvim_lsp.sumneko_lua.setup {
+nvim_lsp.arduino_language_server.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
+nvim_lsp.lua_ls.setup {
   capabilities = capabilities,
   on_attach = function(client, bufnr)
     on_attach(client, bufnr)
