@@ -61,10 +61,9 @@ Pods/
 .atom/storage
 
 # Fish local config
-fish/config-local.fish
-fish/fish_variables
-fish/fish_plugins
-fish/fishd.tmp.*
+config-local.fish
+fish_variables
+fish_plugins
 
 # Karabiner
-.config/karabiner/automatic_backups
+karabiner/automatic_backups
