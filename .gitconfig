@@ -2,8 +2,6 @@
 	email = 77537263+nack098@users.noreply.github.com
 	name = nack098
 [core]
-	autocrlf = false
-	excludesfile = ~/.gitignore
 	editor = nvim
 	ignorecase = false
 [push]
@@ -43,7 +41,7 @@
 [hub]
   protocol = https
 [github]
-	user = craftzdog
+	user = nack098
 [diff]
   tool = nvimdiff
 [difftool "nvimdiff"]
