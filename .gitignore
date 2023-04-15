@@ -63,7 +63,6 @@ Pods/
 # Fish local config
 config-local.fish
 fish_variables
-fish_plugins
 
 # Karabiner
 karabiner/automatic_backups
