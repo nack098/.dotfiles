@@ -33,6 +33,6 @@ keymap.set('n', '<C-w><right>', '<C-w>>')
 keymap.set('n', '<C-w><up>', '<C-w>+')
 keymap.set('n', '<C-w><down>', '<C-w>-')
 
--- TerminalMode
+-- Terminal Mode
 keymap.set('n', 'to', ':vsplit<Return><C-w>w:term<CR>i')
 keymap.set('t', '<ESC>', '<C-\\><C-n>')
