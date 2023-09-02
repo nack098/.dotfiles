@@ -2,9 +2,14 @@ local status, lspkind = pcall(require, "lspkind")
 if (not status) then return end
 
 lspkind.init({
-  -- enables text annotations
+  -- DEPRECATED (use mode instead): enables text annotations
   --
   -- default: true
+  -- with_text = true,
+
+  -- defines how annotations are shown
+  -- default: symbol
+  -- options: 'text', 'text_symbol', 'symbol_text', 'symbol'
   mode = 'symbol',
 
   -- default symbol map
