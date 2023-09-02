@@ -7,8 +7,7 @@ ts.setup {
     disable = {},
   },
   indent = {
-    enable = true,
-    disable = {},
+    enable = true, disable = {},
   },
   ensure_installed = {
     "markdown",
