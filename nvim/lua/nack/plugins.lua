@@ -13,9 +13,9 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   {
-    'svrana/neosolarized.nvim', 
-    dependencies = { 
-      'tjdevries/colorbuddy.nvim' 
+    'svrana/neosolarized.nvim',
+    dependencies = {
+      'tjdevries/colorbuddy.nvim'
     }
   },
   'nvim-lualine/lualine.nvim',
@@ -38,7 +38,7 @@ require("lazy").setup({
   {
     'L3MON4D3/LuaSnip',
     dependencies = { 'rafamadriz/friendly-snippets' }
-  }, 
+  },
   {
     'nvim-treesitter/nvim-treesitter',
     build = ":TSUpdate",
@@ -48,7 +48,8 @@ require("lazy").setup({
   'nvim-telescope/telescope-file-browser.nvim',
   'windwp/nvim-autopairs',
   'windwp/nvim-ts-autotag',
-  { 'numToStr/Comment.nvim',
+  {
+    'numToStr/Comment.nvim',
     dependencies = {
       'JoosepAlviste/nvim-ts-context-commentstring'
     }
