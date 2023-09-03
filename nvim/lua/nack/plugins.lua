@@ -23,7 +23,22 @@ require("lazy").setup({
   'onsails/lspkind-nvim',
   'hrsh7th/cmp-buffer',
   'hrsh7th/cmp-nvim-lsp',
-  'hrsh7th/nvim-cmp',
+  {
+    'hrsh7th/nvim-cmp',
+    config = function()
+      require('cmp').setup({
+        snippet = {
+          expand = function(args)
+            require('luasnip').lsp_expand(args.body)
+          end
+        },
+        sources = {
+          { name = 'luasnip', option = { show_autosnippets = true } },
+        }
+      })
+    end
+  },
+  'saadparwaiz1/cmp_luasnip',
   'neovim/nvim-lspconfig',
   'jose-elias-alvarez/null-ls.nvim',
   'williamboman/mason.nvim',
