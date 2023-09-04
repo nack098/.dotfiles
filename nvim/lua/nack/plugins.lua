@@ -38,6 +38,7 @@ require("lazy").setup({
       })
     end
   },
+  'wakatime/vim-wakatime',
   'saadparwaiz1/cmp_luasnip',
   'neovim/nvim-lspconfig',
   'jose-elias-alvarez/null-ls.nvim',

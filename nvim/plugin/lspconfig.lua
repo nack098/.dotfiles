@@ -89,7 +89,7 @@ nvim_lsp.gopls.setup {
   capabilities = capabilities
 }
 
-nvim_lsp.sourcekit.setup {
+nvim_lsp.clangd.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
@@ -141,11 +141,6 @@ nvim_lsp.tailwindcss.setup {
 }
 
 nvim_lsp.cssls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities
-}
-
-nvim_lsp.clangd.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
