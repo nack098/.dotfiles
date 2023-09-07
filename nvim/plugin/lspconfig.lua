@@ -89,7 +89,7 @@ nvim_lsp.gopls.setup {
   capabilities = capabilities
 }
 
-nvim_lsp.sourcekit.setup {
+nvim_lsp.clangd.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
@@ -145,11 +145,6 @@ nvim_lsp.cssls.setup {
   capabilities = capabilities
 }
 
-nvim_lsp.clangd.setup {
-  on_attach = on_attach,
-  capabilities = capabilities
-}
-
 nvim_lsp.pyright.setup {
   on_attach = on_attach,
   capabilities = capabilities
@@ -158,6 +153,11 @@ nvim_lsp.pyright.setup {
 nvim_lsp.rust_analyzer.setup {
   on_attach = on_attach,
   capabilities = capabilities
+}
+
+nvim_lsp.html.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
 }
 
 nvim_lsp.astro.setup {

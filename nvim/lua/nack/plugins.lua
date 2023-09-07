@@ -13,9 +13,9 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   {
-    'svrana/neosolarized.nvim', 
-    dependencies = { 
-      'tjdevries/colorbuddy.nvim' 
+    'svrana/neosolarized.nvim',
+    dependencies = {
+      'tjdevries/colorbuddy.nvim'
     }
   },
   'nvim-lualine/lualine.nvim',
@@ -23,7 +23,23 @@ require("lazy").setup({
   'onsails/lspkind-nvim',
   'hrsh7th/cmp-buffer',
   'hrsh7th/cmp-nvim-lsp',
-  'hrsh7th/nvim-cmp',
+  {
+    'hrsh7th/nvim-cmp',
+    config = function()
+      require('cmp').setup({
+        snippet = {
+          expand = function(args)
+            require('luasnip').lsp_expand(args.body)
+          end
+        },
+        sources = {
+          { name = 'luasnip', option = { show_autosnippets = true } },
+        }
+      })
+    end
+  },
+  'wakatime/vim-wakatime',
+  'saadparwaiz1/cmp_luasnip',
   'neovim/nvim-lspconfig',
   'jose-elias-alvarez/null-ls.nvim',
   'williamboman/mason.nvim',
@@ -36,9 +52,13 @@ require("lazy").setup({
     end,
   },
   {
-    'L3MON4D3/LuaSnip',
+    "L3MON4D3/LuaSnip",
+    -- follow latest release.
+    version = "2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+    -- install jsregexp (optional!).
+    build = "make install_jsregexp",
     dependencies = { 'rafamadriz/friendly-snippets' }
-  }, 
+  },
   {
     'nvim-treesitter/nvim-treesitter',
     build = ":TSUpdate",
@@ -48,7 +68,8 @@ require("lazy").setup({
   'nvim-telescope/telescope-file-browser.nvim',
   'windwp/nvim-autopairs',
   'windwp/nvim-ts-autotag',
-  { 'numToStr/Comment.nvim',
+  {
+    'numToStr/Comment.nvim',
     dependencies = {
       'JoosepAlviste/nvim-ts-context-commentstring'
     }
