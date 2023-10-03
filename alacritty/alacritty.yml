@@ -14,19 +14,19 @@ scrolling:
 ## Font Settings
 font:
   normal:
-    family: FiraCode Nerd Font
-    style: SemiBold
+    family: JetBrainsMono Nerd Font
+    style: Bold
 
   bold:
-    family: FiraCode Nerd Font
+    family: JetBrainsMono Nerd Font
     style: Bold
 
   italic:
-    family: FiraCode Nerd Font
+    family: JetBrainsMono Nerd Font
     style: Italic
 
   bold_italic:
-    family: FiraCode Nerd Font
+    family: JetBrainsMono Nerd Font
     style: Bold Italic
 
   size: 8
