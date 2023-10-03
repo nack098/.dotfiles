@@ -1,0 +1,32 @@
+import:
+  - ~/.config/alacritty_themes/themes/catppuccin.yaml
+  #- ~/.config/alacritty_themes/themes/solarized_dark.yaml
+
+## Font Settings
+font:
+  normal:
+    family: FiraCode Nerd Font
+    style: medium
+
+  bold:
+    family: FiraCode Nerd Font
+    style: Bold
+
+  italic:
+    family: FiraCode Nerd Font
+    style: Italic
+
+  bold_italic:
+    family: FiraCode Nerd Font
+    style: Bold Italic
+
+  size: 8
+
+## Terminal window settings
+window:
+  #Terminal opacity
+  opacity: 0.75
+  color: #FFFFFF
+  padding:
+    x: 20
+    y: 15
