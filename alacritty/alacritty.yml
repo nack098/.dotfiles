@@ -1,6 +1,15 @@
+## Import Color Scheme
 import:
   - ~/.config/alacritty_themes/themes/catppuccin.yaml
   #- ~/.config/alacritty_themes/themes/solarized_dark.yaml
+
+## Terminal Environment
+env:
+  TERM: fish
+
+## Scrolling
+scrolling:
+  history: 5000
 
 ## Font Settings
 font:
@@ -30,3 +39,9 @@ window:
   padding:
     x: 20
     y: 15
+
+##
+colors:
+  cursor:
+    text: "0x002b36"
+    cursor: "0x93a1a1"
