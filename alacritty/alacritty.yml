@@ -29,7 +29,7 @@ font:
     family: JetBrainsMono Nerd Font
     style: Bold Italic
 
-  size: 8
+  size: 12
 
 ## Terminal window settings
 window:
