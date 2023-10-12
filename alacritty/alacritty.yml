@@ -1,0 +1,47 @@
+## Import Color Scheme
+import:
+  - ~/.config/alacritty_themes/themes/catppuccin.yaml
+  #- ~/.config/alacritty_themes/themes/solarized_dark.yaml
+
+## Terminal Environment
+env:
+  TERM: xterm-256color
+
+## Scrolling
+scrolling:
+  history: 5000
+
+## Font Settings
+font:
+  normal:
+    family: JetBrainsMono Nerd Font
+    style: Bold
+
+  bold:
+    family: JetBrainsMono Nerd Font
+    style: Bold
+
+  italic:
+    family: JetBrainsMono Nerd Font
+    style: Italic
+
+  bold_italic:
+    family: JetBrainsMono Nerd Font
+    style: Bold Italic
+
+  size: 12
+
+## Terminal window settings
+window:
+  #Terminal opacity
+  opacity: 0.75
+  color: #FFFFFF
+  padding:
+    x: 20
+    y: 15
+
+##
+colors:
+  cursor:
+    text: "0x002b36"
+    cursor: "0x93a1a1"
