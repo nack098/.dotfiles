@@ -182,8 +182,22 @@ for type, icon in pairs(signs) do
 end
 
 vim.diagnostic.config({
+  enable = true,
   virtual_text = {
-    prefix = '●'
+    prefix = '●',
+    errors = { "italic" },
+    hints = { "italic" },
+    warnings = { "italic" },
+    information = { "italic" },
+  },
+  underline = {
+    errors = { "underline" },
+    hints = { "underline" },
+    warnings = { "underline" },
+    information = { "underline" },
+  },
+  inlay_hints = {
+    background = true,
   },
   update_in_insert = true,
   float = {

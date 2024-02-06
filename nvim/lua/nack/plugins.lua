@@ -12,12 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  {
-    'svrana/neosolarized.nvim',
-    dependencies = {
-      'tjdevries/colorbuddy.nvim'
-    }
-  },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   'nvim-lualine/lualine.nvim',
   'nvim-lua/plenary.nvim',
   'onsails/lspkind-nvim',
@@ -70,6 +65,7 @@ require("lazy").setup({
   'windwp/nvim-ts-autotag',
   {
     'numToStr/Comment.nvim',
+    lazy = false,
     dependencies = {
       'JoosepAlviste/nvim-ts-context-commentstring'
     }
