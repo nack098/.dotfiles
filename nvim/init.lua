@@ -11,9 +11,11 @@ local is_linux = has "linux"
 if is_mac then
   require('nack.macos')
 end
+
 if is_win then
   require('nack.windows')
 end
+
 if is_linux then
   require('nack.linux')
 end
