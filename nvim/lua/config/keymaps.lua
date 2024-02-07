@@ -6,7 +6,7 @@ local keymap = vim.keymap
 
 local discipline = require("config.discipline")
 
-discipline.cowboy()
+-- discipline.cowboy()
 
 local opts = { noremap = true, silent = true }
 
@@ -24,6 +24,7 @@ keymap.set("n", "<Leader>D", '"_D')
 keymap.set("v", "<Leader>d", '"_d')
 keymap.set("v", "<Leader>D", '"_D')
 
+keymap.set("i", "jj", "<esc>")
 -- Increment/decrement
 keymap.set("n", "+", "<C-a>")
 keymap.set("n", "-", "<C-x>")
